@@ -1,0 +1,2 @@
+profil redesign will be implemented in profil.php (session-based profile image choice + modern UI).
+

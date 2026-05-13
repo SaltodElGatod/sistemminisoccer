@@ -1,0 +1,12 @@
+- [ ] Rework `booking_list.php` rendering logic
+  - [ ] Use DB rows `$rows` when available
+  - [ ] If DB rows empty, fallback to `$sessionRows`
+  - [ ] Ensure `$sessionRows` only contains last checkout entry (no duplicates)
+- [ ] Fix stacking: when new booking happens, append to session history rather than overwrite
+  - [ ] Store an array like `$_SESSION['booking_history_session'][]`
+  - [ ] Update that array inside `booking_pay.php` or `booking_checkout.php` redirect back
+- [ ] Test flow
+  - [ ] Struk -> Riwayat (works)
+  - [ ] OK -> Dashboard -> Riwayat (works)
+  - [ ] Multiple bookings stack in history
+

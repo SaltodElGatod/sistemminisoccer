@@ -1,0 +1,17 @@
+/* Shared page transition: Fade + blur */
+
+/* Fade + blur masuk halaman */
+#page{
+  opacity: 0;
+  transform: translateY(8px);
+filter: blur(0px);
+  transition: opacity 500ms ease, transform 500ms ease, filter 500ms ease;
+}
+
+#page.page-loaded{
+  opacity: 1;
+  transform: translateY(0);
+filter: blur(0);
+}
+
+
